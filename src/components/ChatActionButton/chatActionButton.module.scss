@@ -1,0 +1,22 @@
+.root {
+  @apply flex items-center gap-2;
+  @apply px-3 py-1;
+  @apply transition-all duration-300;
+  @apply rounded-3xl border-2 border-seagreen-700;
+  @apply cursor-pointer text-seagreen-700;
+
+  @apply hover:text-seagreen-400;
+  @apply hover:text-seagreen-400;
+  @apply hover:border-seagreen-400;
+}
+
+.text {
+  @apply text-xs font-bold text-inherit;
+}
+
+.active {
+  composes: root;
+  @apply bg-seagreen-700 text-white;
+  @apply hover:text-white;
+  @apply hover:border-seagreen-700;
+}

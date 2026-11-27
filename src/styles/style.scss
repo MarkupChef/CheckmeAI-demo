@@ -1,0 +1,20 @@
+@charset "UTF-8";
+@use "sass:math";
+
+@layer tailwind-base, antd;
+
+@layer tailwind-base {
+  @tailwind base;
+}
+@tailwind components;
+@tailwind utilities;
+
+// Configuration and helpers
+@import "abstracts/variables";
+
+// Components
+@import "components/button";
+
+// Common
+@import "antd";
+@import "common";

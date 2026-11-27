@@ -1,0 +1,59 @@
+.root {
+}
+
+.content {
+  @apply max-w-6xl;
+  @apply mx-auto;
+  @apply flex flex-col gap-6;
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-semibold;
+    @apply mb-3 mt-2;
+  }
+
+  h1 {
+    @apply text-2xl;
+    @apply sm:text-3xl;
+  }
+
+  h2 {
+    @apply text-xl;
+    @apply sm:text-2xl;
+  }
+
+  h3 {
+    @apply text-lg;
+    @apply sm:text-xl;
+  }
+
+  p {
+    @apply mb-3;
+  }
+
+  ul,
+  ol {
+    @apply list-inside list-disc;
+    @apply mb-3;
+  }
+}
+
+.contentHTML {
+  @apply flex flex-col gap-6;
+}
+
+.content section {
+  @apply p-6;
+  @apply bg-[#FCFFFF];
+  @apply rounded-3xl;
+  @apply shadow-md;
+}
+
+.btnLink {
+  @apply max-w-4xl;
+  @apply mx-auto;
+}

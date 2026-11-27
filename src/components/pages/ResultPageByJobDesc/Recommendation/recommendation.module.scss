@@ -1,0 +1,8 @@
+.chatCard {
+  @apply mb-4 mt-4 bg-gray-10 text-left text-base sm:text-lg;
+}
+
+.button {
+  composes: btn-md from global;
+  @apply mx-auto mt-8 inline-block;
+}

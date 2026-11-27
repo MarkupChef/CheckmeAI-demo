@@ -1,0 +1,22 @@
+.root {
+  @apply mx-auto max-w-md;
+}
+
+.search {
+  > span {
+    @apply overflow-hidden rounded-3xl bg-white p-2.5 pb-1.5 shadow-md;
+  }
+
+  button span[role="img"] {
+    font-size: 1.25rem !important;
+  }
+
+  input,
+  button {
+    @apply border-0 text-lg;
+  }
+
+  input {
+    @apply py-0;
+  }
+}

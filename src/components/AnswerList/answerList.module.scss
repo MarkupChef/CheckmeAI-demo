@@ -1,0 +1,45 @@
+.optionList li:not(:nth-child(4)) .chatActions {
+  @apply mb-6;
+}
+
+.answerItem {
+  @apply mb-4 ml-[1.5em] text-sm font-medium last:mb-0;
+  @apply list-[upper-alpha];
+
+  @apply lg:text-base;
+  @apply 2xl:text-lg;
+}
+
+.chatActions {
+  @apply flex gap-3;
+}
+
+.chatActionsLogo {
+  @apply w-7;
+}
+
+.chatActionList {
+  @apply flex flex-wrap items-center justify-start gap-3;
+}
+
+.chatActionList li {
+  @apply flex-shrink-0;
+}
+
+.correctOption {
+  @apply mb-3 text-lime;
+}
+
+.wrongOptions {
+  @apply text-red;
+}
+
+.chatContainer {
+  @apply mb-3;
+}
+
+.closeButton {
+  @apply text-seagreen-700 underline decoration-from-font underline-offset-2;
+  @apply text-sm;
+  @apply hover:text-seagreen-900;
+}

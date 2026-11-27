@@ -1,0 +1,38 @@
+.root {
+  @apply mx-auto w-full max-w-6xl text-center;
+}
+
+.topicImg {
+  @apply h-5 w-5;
+}
+
+.failedMessage {
+  @apply mb-4 bg-gray-10 text-left text-base;
+  @apply sm:text-lg;
+}
+
+.footer {
+  @apply flex flex-wrap items-center justify-center gap-3;
+  @apply sm:justify-between;
+}
+
+.footerAiAction {
+  @apply flex flex-wrap items-center justify-center gap-3;
+  @apply sm:ml-auto;
+}
+
+.nextActionBtnIcon {
+  @apply ml-2 h-4 w-2;
+}
+
+.lockIcon {
+  @apply mr-1 flex-shrink-0 text-xl;
+}
+
+.actionPanel {
+  @apply my-4;
+}
+
+.actionPanel > div {
+  @apply p-5;
+}

@@ -1,0 +1,21 @@
+.root {
+  @apply relative flex items-center gap-4;
+}
+
+.icon {
+  @apply max-w-[54px];
+}
+
+.title {
+  @apply text-default;
+  @apply hidden;
+  @apply sm:block;
+}
+
+.name {
+  @apply text-2xl font-bold;
+}
+
+.slogan {
+  @apply font-semibold;
+}

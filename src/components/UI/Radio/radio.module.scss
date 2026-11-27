@@ -1,0 +1,10 @@
+.label {
+  @apply flex w-full items-center gap-5 px-5 py-3 text-left text-sm;
+  @apply md:gap-6 md:text-lg;
+}
+
+.input {
+  @apply h-4 w-4 border-white bg-white text-blue-600 ring-2 ring-white md:h-6 md:w-6;
+  @apply focus:ring-white;
+  @apply checked:bg-seagreen-900;
+}

@@ -1,0 +1,16 @@
+.root {
+  @apply flex items-center gap-3;
+}
+
+.btn {
+  @apply flex items-center gap-3;
+  @apply hover:text-seagreen-700;
+}
+
+.btn:hover .questionMark {
+  @apply text-seagreen-700;
+}
+
+.questionMark {
+  @apply text-sm text-gray-400;
+}

@@ -1,0 +1,8 @@
+.root {
+  @apply relative;
+}
+.sup {
+  @apply text-xl;
+  @apply absolute;
+  @apply top-1;
+}

@@ -1,0 +1,7 @@
+.root {
+  @apply flex items-center justify-center gap-1 whitespace-nowrap text-lg font-semibold text-default;
+}
+
+.icon {
+  @apply shrink-0;
+}

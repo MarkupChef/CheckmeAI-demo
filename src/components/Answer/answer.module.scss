@@ -1,0 +1,22 @@
+.root {
+  @apply rounded-2xl transition-colors duration-300;
+  @apply md:rounded-3xl;
+  @apply hover:text-seagreen-900;
+  @apply hover:bg-aqua-light;
+}
+
+.default {
+  @apply bg-gray-10;
+}
+
+.correct {
+  @apply bg-green-200;
+}
+
+.wrong {
+  @apply bg-red;
+}
+
+.checked {
+  @apply bg-aqua-light text-seagreen-900;
+}

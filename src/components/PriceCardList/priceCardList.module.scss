@@ -1,0 +1,35 @@
+/* TODO: combine with modePage.module.scss */
+.root {
+  @apply overflow-x-auto;
+  @apply mx-auto px-6 pb-4 text-center;
+  @apply flex w-full max-w-6xl items-stretch gap-6 md:gap-10;
+  @apply snap-x snap-mandatory;
+
+  @apply md:snap-none md:justify-center md:overflow-hidden;
+}
+
+.item {
+  composes: w-full from global;
+  composes: max-w-xs from global;
+  composes: flex-shrink-0 from global;
+  composes: relative from global;
+
+  @apply snap-center;
+}
+
+.warningMessage {
+  @apply inline-block text-center text-xs font-normal text-gray-500;
+
+  line-height: 1.2 !important;
+}
+
+.label {
+  @apply absolute bottom-[75px] left-1/2 block -translate-x-1/2 -translate-y-[50%] transform underline;
+  @apply rounded-3xl text-sm font-semibold text-seagreen-700;
+  @apply hover:text-seagreen-500;
+}
+
+.btn {
+  composes: btn-small from global;
+  @apply mx-auto min-w-[100px] rounded-3xl;
+}

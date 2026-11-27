@@ -1,0 +1,21 @@
+.logo {
+  @apply flex h-[4rem] max-h-20 w-[35%] max-w-[5rem] flex-shrink-0 items-center text-[6rem];
+
+  @apply lg:h-[5rem] lg:w-[5rem];
+
+  @apply xl:h-[6rem];
+}
+
+.logo img {
+  @apply aspect-square object-contain;
+}
+
+.logoPlaceholder {
+  @apply aspect-square !h-auto;
+}
+
+.name {
+  @apply mb-0 w-full max-w-[11rem] grow text-2xl font-semibold capitalize tracking-tight;
+
+  @apply xl:text-3xl;
+}

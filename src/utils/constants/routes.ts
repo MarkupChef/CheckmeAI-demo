@@ -1,0 +1,17 @@
+export const ROUTES = {
+  root: '/',
+  profile: '/profile',
+  topics: '/topics',
+  price: '/pricing',
+  login: '/login',
+  interview: '/interview',
+  interviews: '/interviews',
+  interview_preparation: '/interview-preparation',
+  successful_payment: '/successful-payment',
+  certificate: '/certificate',
+  public_interview_result: '/public-interview-result',
+  recommendations: '/recommendations',
+  contacts: '/contacts',
+  job_vacancy: '/job-vacancy',
+  job_vacancy_review: '/job-vacancy/review',
+};

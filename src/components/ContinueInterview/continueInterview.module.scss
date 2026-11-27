@@ -1,0 +1,12 @@
+.root {
+  @apply fixed left-1/2 top-6 z-[10] -translate-x-1/2;
+  @apply rounded-3xl border-2 border-solid border-primary bg-white px-4 py-1 text-sm font-semibold text-primary shadow-md transition-colors;
+
+  &:hover {
+    @apply bg-primary text-white;
+  }
+
+  @screen md {
+    @apply bottom-4 left-1/2 top-auto z-10 -translate-x-1/2;
+  }
+}

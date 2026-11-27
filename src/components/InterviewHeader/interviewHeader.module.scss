@@ -1,0 +1,40 @@
+.root {
+  @apply inline-flex;
+}
+
+.root > div {
+  @apply flex flex-row items-center justify-between gap-4;
+  @apply gap-[1.25rem] px-5 py-2;
+}
+
+.interviewTopic {
+  @apply flex items-center gap-2 text-left;
+}
+
+.interviewTopicTitleIcon {
+  @apply h-6 w-6 flex-shrink-0;
+}
+
+.interviewTopicTitle {
+  @apply truncate text-lg font-semibold text-gray-800;
+  @apply sm:text-xl;
+}
+
+.interviewLevel {
+  @apply flex flex-wrap items-center gap-2;
+  @apply ml-auto;
+}
+
+.interviewTopicLevelIcon {
+  @apply h-6 w-6;
+}
+
+.interviewLevelTitle {
+  @apply text-xl font-semibold text-gray-800;
+  @apply hidden;
+  @apply sm:block;
+}
+
+.counter {
+  @apply flex-shrink-0;
+}

@@ -1,0 +1,73 @@
+@keyframes arrow-scroll-animate {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-20px);
+  }
+  60% {
+    transform: translateY(-15px);
+  }
+}
+
+.root {
+  @apply relative flex grow flex-col px-4 pb-[70px];
+
+  @apply md:mt-0 md:justify-center;
+}
+
+.infoCard {
+  @apply mx-auto max-w-lg md:max-w-2xl;
+}
+
+.cardsContainer {
+  @apply mx-auto mt-4 flex w-full max-w-lg flex-wrap gap-4 text-center md:max-w-2xl;
+}
+
+.card {
+  @apply h-[150px] flex-auto;
+}
+
+.cardInner {
+  @apply flex flex-col gap-2;
+}
+
+.cardDescription {
+  @apply text-xl font-bold;
+}
+
+.cardTitle {
+  @apply text-7xl font-semibold text-seagreen-500;
+}
+
+.cardIcon {
+  @apply mx-auto text-7xl text-seagreen-500;
+}
+
+.btn {
+  @apply mt-8 text-center md:mt-[2rem];
+}
+
+.btnIcon {
+  @apply ml-3;
+}
+
+.arrow {
+  composes: absolute from global;
+  composes: left-0 from global;
+  composes: hidden from global;
+  composes: w-full from global;
+
+  @apply -bottom-6;
+  @apply md:block;
+
+  animation: arrow-scroll-animate 3s ease infinite;
+}
+
+.arrowIcon {
+  @apply mx-auto mt-10 text-3xl;
+}

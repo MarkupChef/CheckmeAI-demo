@@ -1,0 +1,24 @@
+.root {
+  @apply fixed bottom-[5px] z-[3] w-full text-center text-[8px] text-default;
+
+  @screen md {
+    @apply relative bottom-auto flex items-center justify-between px-8 pt-8 text-left text-xs;
+  }
+
+  @screen xl {
+    @apply px-11;
+  }
+}
+
+.nav {
+  @apply hidden flex-wrap items-center text-sm;
+
+  @screen md {
+    @apply flex;
+  }
+
+  a {
+    @apply text-default;
+    @apply hover:underline;
+  }
+}

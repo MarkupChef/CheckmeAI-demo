@@ -1,0 +1,21 @@
+.supTitle {
+  @apply text-center text-2xl font-semibold capitalize;
+
+  @apply md:text-4xl;
+
+  @apply lg:text-3xl;
+}
+
+.backButton {
+  @apply mx-auto mt-6 max-w-[150px];
+}
+
+.list {
+  @apply flex flex-col items-center gap-4;
+}
+
+.linkItem {
+  @apply text-default transition duration-300;
+
+  @apply hover:text-seagreen-500;
+}

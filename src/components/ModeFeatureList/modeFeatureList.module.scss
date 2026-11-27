@@ -1,0 +1,27 @@
+.root {
+  @apply text-left;
+}
+.item {
+  @apply relative mb-2 flex items-center gap-3 text-[15px] font-light;
+  @apply cursor-pointer;
+}
+
+.item:hover {
+  @apply text-seagreen-700;
+
+  .questionMark {
+    @apply text-seagreen-700;
+  }
+}
+
+.icon {
+  @apply text-lime;
+}
+
+.iconGold {
+  color: gold;
+}
+
+.questionMark {
+  @apply text-xs text-gray-400;
+}

@@ -1,0 +1,32 @@
+.root {
+  @apply flex h-full min-h-[510px] flex-col;
+}
+
+.root > div {
+  flex: 1;
+}
+
+.header {
+  @apply mb-2 pb-4;
+  @apply border-b border-b-gray-300;
+  @apply text-2xl font-bold;
+}
+
+.title {
+  @apply mb-0;
+  @apply text-7xl font-semibold text-seagreen-500;
+}
+
+.subtitle {
+  @apply -mt-4;
+  @apply text-xl font-semibold;
+}
+
+.des {
+  @apply -mt-2;
+  @apply italic;
+}
+
+.content {
+  @apply mb-1 mt-2 flex-grow;
+}

@@ -1,0 +1,92 @@
+@keyframes arrow-scroll-animate {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-10px);
+  }
+  60% {
+    transform: translateY(-6px);
+  }
+}
+
+.root {
+  @apply pointer-events-none relative -mt-[128px] flex grow flex-col px-4 sm:-mt-[164px];
+
+  // on mobile the section takes only the content height, so the next one stays close
+  @screen md {
+    min-height: 100vh;
+    min-height: 100dvh;
+  }
+
+  // spacers center the content on the screen; the top one never gets lower than the header height
+  &::before,
+  &::after {
+    @apply flex-1 content-[''];
+  }
+
+  &::before {
+    @apply min-h-[128px] sm:min-h-[164px];
+  }
+}
+
+.infoCard {
+  @apply pointer-events-auto mx-auto mb-6 max-w-lg md:max-w-[776px];
+}
+
+.cta {
+  @apply mt-2 text-center;
+}
+
+.ctaTitle {
+  @apply mb-3 text-center text-base font-semibold text-gray-700 dark:text-gray-400 md:text-lg;
+}
+
+.controls {
+  @apply mx-auto flex max-w-sm flex-col gap-3;
+}
+
+.segmented {
+  @apply rounded-full p-1;
+
+  :global(.ant-segmented-group) {
+    @apply gap-1;
+  }
+
+  :global(.ant-segmented-thumb),
+  :global(.ant-segmented-item) {
+    @apply rounded-full;
+  }
+
+  :global(.ant-segmented-item) {
+    @apply flex;
+  }
+
+  :global(.ant-segmented-item-label) {
+    @apply flex min-h-[2.5rem] flex-1 items-center justify-center whitespace-normal !py-1 font-semibold !leading-tight md:text-lg;
+  }
+
+  :global(.ant-segmented-item-selected) {
+    @apply text-gray-900;
+  }
+}
+
+.arrow {
+  composes: absolute from global;
+  composes: left-0 from global;
+  composes: hidden from global;
+  composes: w-full from global;
+
+  @apply bottom-4;
+  @apply md:block;
+
+  animation: arrow-scroll-animate 3s ease infinite;
+}
+
+.arrowIcon {
+  @apply mx-auto block text-2xl;
+}

@@ -1,0 +1,28 @@
+.segmented:global(.ant-segmented) {
+  @apply mx-auto mb-8 block max-w-[21rem] rounded-[30px] bg-white p-1;
+
+  :global(.ant-segmented-group) {
+    @apply gap-1;
+  }
+
+  :global(.ant-segmented-thumb),
+  :global(.ant-segmented-item) {
+    @apply rounded-[30px];
+  }
+
+  :global(.ant-segmented-thumb) {
+    @apply bg-aqua-light;
+  }
+
+  :global(.ant-segmented-item) {
+    @apply text-gray-500;
+  }
+
+  :global(.ant-segmented-item-label) {
+    @apply flex min-h-[2.1875rem] items-center justify-center font-semibold !leading-[2.1875rem] md:text-lg;
+  }
+
+  :global(.ant-segmented-item-selected) {
+    @apply bg-aqua-light text-seagreen-800;
+  }
+}

@@ -1,0 +1,20 @@
+module.exports = {
+  plugins: ['prettier-plugin-organize-imports', 'prettier-plugin-tailwindcss'],
+  endOfLine: 'lf',
+  printWidth: 120,
+  semi: true,
+  singleQuote: true,
+  tabWidth: 2,
+  trailingComma: 'es5',
+  useTabs: false,
+  proseWrap: 'preserve',
+  quoteProps: 'as-needed',
+  overrides: [
+    {
+      files: ['*.scss', '*.css'],
+      options: {
+        singleQuote: false,
+      },
+    },
+  ],
+};

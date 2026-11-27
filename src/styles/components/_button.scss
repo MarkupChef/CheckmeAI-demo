@@ -1,0 +1,65 @@
+// this style duplicate font-size of "size" key in customTheme.fb.ts
+// this classes are special for border-radius with "em"
+
+.btn {
+  font-size: 1rem;
+  border-radius: 1.75em !important;
+  border: 0 !important;
+
+  @apply lg:text-[1.25rem]; /* 20px */
+}
+
+.btn-xl {
+  @extend .btn;
+  font-size: 2.25rem;
+
+  @apply lg:text-[2.5rem]; /* 40px */
+}
+
+.btn-lg {
+  @extend .btn;
+  font-size: 1.75rem;
+
+  @apply lg:text-[2rem]; /* 32px */
+}
+
+.btn-md {
+  @extend .btn;
+  font-size: 1.25rem;
+
+  @apply lg:text-[1.5rem]; /* 24px */
+}
+
+.btn-sm {
+  @extend .btn;
+  font-size: 0.75rem;
+
+  @apply lg:text-[1rem]; /* 16px */
+}
+
+.btn-xs {
+  @extend .btn;
+  font-size: 0.875rem; /* 14px */
+
+  @apply lg:text-[0.875rem]; /* 14px */
+}
+
+.btn-shadow {
+  @apply flex items-center gap-2;
+  @apply bg-transparent;
+  @apply cursor-pointer text-seagreen-700;
+  @apply text-xs font-bold text-seagreen-700;
+  @apply transition-all duration-300;
+
+  box-shadow: 0 0 0 2px inset $seagreen-700;
+  line-height: 1.5;
+
+  @apply hover:text-seagreen-400;
+  @apply hover:bg-transparent;
+
+  &:hover,
+  &:focus {
+    background-color: transparent !important;
+    box-shadow: 0 0 0 2px inset $seagreen-400 !important;
+  }
+}

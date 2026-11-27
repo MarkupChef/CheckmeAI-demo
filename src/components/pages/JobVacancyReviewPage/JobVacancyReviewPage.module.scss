@@ -1,0 +1,10 @@
+.errorMessage {
+  @apply text-center text-sm font-bold text-red;
+  @apply pt-2;
+}
+
+.form {
+  @apply flex flex-row flex-wrap items-center justify-center gap-6;
+
+  @apply sm:justify-between;
+}
