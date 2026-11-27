@@ -5,7 +5,6 @@ declare module 'next-auth' {
     email: string;
     name: string;
     image: string;
-    is_new_user?: boolean;
   }
 
   interface Session {
@@ -14,7 +13,6 @@ declare module 'next-auth' {
       name: string;
       image: string | null;
       user_id?: string | null;
-      is_new_user?: boolean;
     };
   }
 }
@@ -25,6 +23,5 @@ declare module 'next-auth/jwt' {
     name: string;
     image: string;
     user_id?: string | null;
-    is_new_user?: boolean;
   }
 }

@@ -81,8 +81,6 @@ export const authOptions: NextAuthOptions = {
               mode_status: 'paid',
             });
           }
-
-          user.is_new_user = true;
         }
 
         return true;
@@ -94,10 +92,6 @@ export const authOptions: NextAuthOptions = {
     async jwt({ token, user, account }) {
       if (user && user.email) {
         const userFromDB = await getUserByEmail(user.email);
-
-        if (user.is_new_user) {
-          token.is_new_user = true;
-        }
 
         token.user_id = userFromDB?.id || null;
         token.id = user.id;
@@ -111,10 +105,6 @@ export const authOptions: NextAuthOptions = {
 
     async session({ session, token }) {
       const { user_id } = session.user;
-
-      if (token.is_new_user) {
-        session.user.is_new_user = true;
-      }
 
       // undefined can't be serialized in server-rendered props if user has no avatar
       session.user.image = session.user.image || null;
