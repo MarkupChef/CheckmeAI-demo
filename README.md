@@ -17,16 +17,6 @@ CheckmeAI was launched as a commercial product with paying users. This repositor
 
 **Stack:** Next.js 15 (App Router) · React 19 · TypeScript · Redux Toolkit / RTK Query · Ant Design · Tailwind CSS · SCSS modules · MongoDB / Mongoose · NextAuth (Google, GitHub) · OpenAI API · Stripe · Google Sheets API · @react-pdf
 
-## Getting started
-
-Requirements: Node.js 22.x, npm, MongoDB, OpenAI API key, Stripe test keys, Google service account with access to the topics sheet.
-
-```bash
-npm ci
-cp .env.example .env.local   # fill in the values
-npm run dev                  # http://localhost:3000
-```
-
 ## Scripts
 
 | Command             | Description            |
